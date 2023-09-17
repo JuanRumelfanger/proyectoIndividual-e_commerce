@@ -1,6 +1,9 @@
 const productsController = {
     home: (req, res)=>{
-        res.render(home);
+        res.render('home');
+    },
+    products: (req, res)=>{
+        res.render('products');
     }
 }
 
