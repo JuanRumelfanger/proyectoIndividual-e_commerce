@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path')
 
-const mainRoutes = require('./routes/main')
-const productsRouters = require('./routes/products');
-const userRoutes = require('./routes/user');
+const mainRoutes = require('./src/routes/main')
+const productsRouters = require('./src/routes/products');
+const userRoutes = require('./src/routes/user');
 
 //Configuro ejs
 app.set('view engine', 'ejs');

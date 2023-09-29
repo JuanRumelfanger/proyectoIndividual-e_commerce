@@ -8,7 +8,5 @@ module.exports = {
     searchResults:(req,res)=>{
         res.send("Seccion de busqueda y filtros");
     }
-
-
 }
 
