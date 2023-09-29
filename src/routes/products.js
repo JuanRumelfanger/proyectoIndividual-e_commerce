@@ -9,6 +9,13 @@ router.get('/detail', productoControllers.detailProduct);
 
 router.get('/search', productoControllers.searchResults);
 
+router.get('/create', productoControllers.createPorduct);
+router.post('/create', productoControllers.addProduct);
+
+router.get('/edit', productoControllers.editProduct);
+router.put('/edit', productoControllers.pushEdit);
+router.delete('/edit', productoControllers.deleteProduct);
+
 
 
 module.exports = router

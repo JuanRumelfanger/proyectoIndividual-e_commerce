@@ -7,6 +7,21 @@ module.exports = {
     },
     searchResults:(req,res)=>{
         res.send("Seccion de busqueda y filtros");
+    },
+    createPorduct:(req,res)=>{
+        res.send("Seccion de creacion de producto")
+    },
+    addProduct:(req,res)=>{
+        console.log(req.body);
+    },
+    editProduct:(req, res)=>{
+        res.send("Seccion de edicion de producto");
+    },
+    pushEdit:(req,res)=>{
+        console.log(req.body);
+    },
+    deleteProduct:(req,res)=>{
+        
     }
 }
 
