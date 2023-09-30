@@ -1,11 +1,10 @@
 module.exports = {
     login:(req,res)=>{
-        res.send("Seccion del login");
+        res.render('login');
     },
     seasion:(req,res)=>{
-        console.log(req.body)
+      res.send(req.body)
     },
-
     register:(req,res)=>{
         res.send("Seccion de registro");
     },

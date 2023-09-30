@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/public/css/loginStyls.css" rel="stylesheet" >
+    <title>Login</title>
+</head>
+<body>
+    <form action="/users/login" method="POST">
+        <label for="name" class="input">Ingrese su nombre</label>
+        <input type="text" name="name" id="name" value="name"><br>
+
+        <label for="last_name" class="input">Ingrese su apellido</label>
+        <input type="text" name="last_name" id="last_name"><br>
+
+        <label for="age" class="input">Ingrese su edad</label>
+        <input type="number" name="age" id="age"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
