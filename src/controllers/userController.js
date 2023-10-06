@@ -1,4 +1,7 @@
 module.exports = {
+    listUser:(req,res)=>{
+        res.send("Listado de usuarios")
+    },
     login:(req,res)=>{
         res.render('login');
     },
@@ -17,4 +20,7 @@ module.exports = {
     wishList:(req,res)=>{
         res.send("Seccion del deseados");
     },
+    profile:(req,res)=>{
+        res.send("Perfil del usuario numero "+req.params.id)
+    }
 }
