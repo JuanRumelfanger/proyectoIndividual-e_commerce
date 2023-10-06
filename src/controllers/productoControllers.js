@@ -3,7 +3,7 @@ module.exports = {
         res.send("Listado de productos");
     },
     detailProduct:(req,res)=>{
-        res.send("Seccion detalle del producto");
+        res.send("Seccion detalle del producto "+req.params.id);
     },
     searchResults:(req,res)=>{
         res.send("Seccion de busqueda y filtros");
@@ -15,7 +15,7 @@ module.exports = {
         console.log(req.body);
     },
     editProduct:(req, res)=>{
-        res.send("Seccion de edicion de producto");
+        res.send("Seccion de edicion de producto "+req.params.id);
     },
     pushEdit:(req,res)=>{
         console.log(req.body);
