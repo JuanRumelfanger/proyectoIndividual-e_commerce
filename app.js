@@ -9,6 +9,9 @@ const mainRoutes = require('./src/routes/main')
 const productsRouters = require('./src/routes/products');
 const userRoutes = require('./src/routes/user');
 
+const userViews = path.join(__dirname, './src/views/users');
+//const productsViews = path.join(__dirname, './views/products');
+
 //Configuro validaciones
 app.use(methodOverride('_method'));
 app.use(cookieParser());
@@ -21,6 +24,8 @@ app.use(
 );
 
 //Configuro ejs
+app.use(express.static(path.join(__dirname, '../public')));
+app.set('views', [userViews]);
 app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -28,8 +33,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/', mainRoutes);
 app.use('/product', productsRouters);
 app.use('/users', userRoutes);
-
-app.use(express.static('public'));
 //Levanto el servidor
 
 app.listen(3000, ()=>{

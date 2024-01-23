@@ -1,5 +1,10 @@
+const express = require('express');
+const path = require('path');
 module.exports = {
     home:(req,res)=>{
-        res.send("Seccion home");
+        res.render('home');
+    },
+    pages:(req,res)=>{
+        res.render('pages');
     }
 }
